@@ -184,11 +184,11 @@ ul li{
     margin-bottom: 100px;
 }
 
-.subscription-plans{
+.subscription-card{
     height: 600px;
 }
 
-.subscription-plans > div{
+.subscription-card > div{
     height: 300px;
 
     background-color: red;
