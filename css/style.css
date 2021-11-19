@@ -19,7 +19,7 @@ body{
 /* utilities */
 
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .col{
@@ -29,8 +29,18 @@ body{
 .btn-small{
     padding: 5px 10px;
 }
+.btn-big{
+    padding: 10px 20px;
+}
+
 .text-align-right{
     text-align: right;
+}
+.text-align-left{
+    text-align: left;
+}
+.inline-block{
+    display: inline-block;
 }
 /* widths */
 
@@ -77,7 +87,7 @@ body{
 
 header:not(.title-jumbo){
     background-color: #b4d0e7;
-    min-height: 800px;
+    min-height: 750px;
 }
 
 .header-menu{
@@ -131,4 +141,30 @@ ul li{
     font-size: 15px;
     width: 370px;
     line-height: 20px;
+}
+
+.jumbo-text{
+    margin-bottom: 30px;
+}
+
+.btn-jumbo-container .btn-big{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.btn-jumbo-container .btn-no-border{
+    font-size: 12px;
+    margin-bottom: 70px;
+}
+
+.arrow-down{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#jumbo-img{
+    max-width: 100%;
+}
+.img-jumbo-container{
+    max-width: 70%;
 }
