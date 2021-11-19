@@ -16,7 +16,7 @@ body{
     font-family: 'Open Sans', sans-serif; 
 }
 
-        /* utilities */
+/* utilities */
 
 .container{
     width: 1200px;
@@ -26,28 +26,34 @@ body{
     float: left;
 }
 
-/* widths */
-
-.w-50{
-    width: 50%;
-}
-.w-100{
-    width: 100%;
-}
-
 .btn-small{
     padding: 5px 10px;
 }
 .text-align-right{
     text-align: right;
 }
+/* widths */
+
+.w-100{
+    width: 100%;
+}
+.w-70{
+    width: 60%;
+}
+.w-50{
+    width: 50%;
+}
+.w-30{
+    width: 30%;
+}
+
 /* bgc colors */
 
 .bgc-blue{
- background-color:#0061ff;
+    background-color:#0061ff;
 }
 .bgc-lightblue{
- background-color: #b4d0e7;
+    background-color: #b4d0e7;
 }
 
 
@@ -67,15 +73,19 @@ body{
 
 /* structure */
 
-header:not(.text-jumbo){
+/* header menu */
+
+header:not(.title-jumbo){
     background-color: #b4d0e7;
     min-height: 800px;
 }
 
 .header-menu{
     background-color: #fff;
+    width: 100%;
     height: 80px;
     line-height: 80px;
+    position: fixed;
 }
 
 .header-menu .logo-header, .header-menu .menu-links{
@@ -103,13 +113,22 @@ ul li{
     padding-left: 30px;
 }
 
-.text-jumbo{
+
+/* header jumbo */
+
+.title-jumbo{
     text-align: left;
     font-size: 50px;
     font-weight: bolder;
 }
-
 .header-jumbo{
-    margin-top: 50px;
+    padding-top: 160px;
+}
 
+.jumbo-content{
+    margin-top: 50px;
+    text-align: left;
+    font-size: 15px;
+    width: 370px;
+    line-height: 20px;
 }
