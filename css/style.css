@@ -19,6 +19,54 @@
     width: 1200px;
     margin: 0 auto;
 }
+.col{
+    float: left;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.bgc-blue{
+ background-color: blue;
+}
+
+.btn-small{
+
+}
+
+.text-dec-none{
+    text-decoration: none;
+}
+
+.color-black{
+    color: black;
+}
+.text-align-right{
+    text-align: right;
+}
 
 
 /* structure */
+
+header{
+    /* background-color: #fff; */
+    background-color: red;
+    height: 80px;
+    line-height: 80px;
+}
+
+.header-menu .logo-header, .header-menu .menu-links{
+    display: inline-block;
+}
+img , .menu-links a{
+ vertical-align: middle;
+}
+
+ul li{
+    display: inline-block;
+}
+
+.btn-header {
+    display:inline-block
+}
