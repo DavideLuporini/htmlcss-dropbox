@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-.clearfix{
+.clearfix::after{
     content: '';
     clear: both;
     display: block;
@@ -46,6 +46,17 @@ body{
 .inline-block{
     display: inline-block;
 }
+
+.margin-bottom-10px{
+    margin-bottom: 10px;
+}
+.margin-bottom-20px{
+    margin-bottom: 20px;
+}
+.margin-bottom-40px{
+    margin-bottom: 40px;
+}
+
 /* widths */
 
 .w-100{
@@ -59,7 +70,7 @@ body{
 }
 
 .w-033{
-    width:calc(1000px / 3 - 4px);
+    width:calc(1000px / 3 - 40px);
 }
 .w-30{
     width: 30%;
@@ -78,6 +89,9 @@ body{
 .text-dec-none{
     text-decoration: none;
 }
+.text-underline{
+    text-decoration: underline;
+}
 
 /* text colors */
 
@@ -87,7 +101,12 @@ body{
 .color-white{
     color: white;
 }
-
+.color-gray{
+    color: gray;
+}
+.font-size-12px{
+    font-size: 12px;
+}
 
 /* structure */
 
@@ -106,6 +125,7 @@ body{
     line-height: 80px;
     position: fixed;
     z-index: 1;
+    top: 0;
 }
 
 .header-menu .logo-header, .header-menu .menu-links{
@@ -123,7 +143,7 @@ img , .menu-links a{
     padding-right: 30px;
 }
 
-ul li{
+.menu-links > ul li{
     display: inline-block;
     padding-left: 30px;
 }
@@ -179,31 +199,33 @@ ul li{
     left: 50px;
 }
 
-/* section subscription plans */
-
+/* section subscription cards */
+.card{
+   min-height: 750px;
+   margin-bottom: 30px;
+}
+.card-professional,.card-standard{
+    margin-right: 60px;
+}
+/* card heaader */
 .subscription{
     margin-bottom: 100px;
 }
 
-.subscription-card{
-    height: 600px;
-}
 
-.subscription-card > div{
-    height: 300px;
 
-    background-color: red;
-    border: 2px solid black;
-}
+.card {
+    border: 1px solid  rgb(200, 200, 200);
+} 
 
-.plan-professional-header{
+.cards-header{
     text-align: center;
-    border-bottom: solid black;
+    border-bottom: 1px solid rgb(200, 200, 200);
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.plans-title{
+.cards-title{
     margin-bottom: 50px;
     font-size: 38px;
 }
@@ -220,11 +242,109 @@ ul li{
 .not-checked{
     opacity: 0.2;
     border: 2px solid black;
+    margin-left: 10px;
 }
 
 .checked{
     border: 4px solid blue;
 }
-.section-subscription-plans-header{
+.section-subscription-cards-header{
     margin-bottom: 50px;
+}
+
+/* cards description*/
+.subscription-card{
+    margin-bottom: 20px;
+}
+.card-description-container{
+    width: 75%;
+    margin: 25px auto;    
+}
+.cards-description > ul li,.cards-highlights > ul li{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cards-description > ul h3{
+    margin-bottom: 10px;
+}
+.cards-description > ul .trial-btn{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.half-hr{
+    text-align: left;
+    width: 60px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+
+/* cards highlights */
+
+.cards-highlights > ul li{
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+/* footer cards */
+.footer-card{
+    border: 1px solid rgb(200, 200, 200);
+    margin-bottom: 150px;
+}
+.card-footer-title{
+    border-bottom: 1px solid rgb(200, 200, 200);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-card h2{
+    display: inline-block;
+    margin-bottom: 15px;    
+}
+
+.footer-card a{
+    position: absolute;
+    right: 300px;   
+}
+
+.footer-description-container {
+    width: 95%;
+    margin: 25px auto;
+}
+.footer-card h4{
+    margin-bottom: 20px;
+}
+
+/* section join dropbox */
+
+#img-partner{
+    max-width: 100%;
+}
+.text-partner {
+    padding-left: 50px;
+    padding-top: 40px;
+
+}
+.text-partner h2{
+    margin-bottom: 20px;
+}
+
+.text-partner h4{
+    font-weight: normal;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.text-partner a{
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+}
+
+.join-dropbox{
+    margin-bottom: 100px;
 }
