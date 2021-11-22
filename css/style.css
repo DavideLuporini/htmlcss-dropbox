@@ -348,3 +348,38 @@ img , .menu-links a{
 .join-dropbox{
     margin-bottom: 100px;
 }
+
+/* section Dropbox business */
+
+.dropbox-business .tool-title{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.tool{
+    min-height: 300px;
+}
+.row{
+    margin-bottom: 100px;
+}
+.row .tool:nth-child( 3n + 2 ){
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+.tool-img-container{
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.img-tool{
+    max-width: 100%;
+}
+
+.tool h2{
+    margin-bottom: 30px;
+}
+.tool h4{
+    font-size: 15px;
+    font-weight: normal;
+}
