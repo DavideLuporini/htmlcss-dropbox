@@ -528,3 +528,26 @@ height: 400px;
     left: 350px;
     bottom: 5px;
 }
+
+/* page footer */
+
+.page-footer{
+    height: 450px;
+    background-color: black;
+}
+
+.page-footer ul{
+    margin-top: 100px;
+    list-style: none;
+    width: calc(100% / 5 - 6px);
+    display: inline-block;
+}
+
+.page-footer ul li{
+    color: white;
+    line-height: 25px;
+    font-size: 12px;
+}
+.page-footer ul h2{
+    margin-bottom: 20px;
+}
