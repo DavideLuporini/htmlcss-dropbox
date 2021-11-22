@@ -93,6 +93,37 @@ body{
 .bgc-lightblue{
     background-color: #b4d0e7;
 }
+.bgc-lightgreen{
+    background-color: #a2d39b;
+}
+.bgc-bordeux{
+    background-color: #61082b;
+}
+.bgc-mediumblue{
+    background-color: #0093ce;
+}
+.bgc-red{
+    background-color: #ff1c1c;
+}
+.bgc-darkred{
+    background-color: #d5001f;
+}
+.bgc-cyan{
+    background-color:#b4d0e7;
+}
+.bgc-darkblue{
+    background-color:#0d2481;
+}
+.bgc-yellow{
+    background-color:#ffd830;
+}
+.bgc-grey{
+    background-color:#f5f5f5;
+}
+.bgc-white{
+    background-color: white;
+}
+
 
 
 .text-dec-none{
@@ -403,16 +434,14 @@ img , .menu-links a{
     margin-bottom: 30px;
 }
 
-.container-fullpage .col{
-    background-color: red;
-    border: 2px solid black;
-}
 .container-fullpage .w-50{
 position: relative;
 height: 100%;
 }
 .container-fullpage .w-30{
-
+height: 400px;
+}
+.container-fullpage .w-40{
 height: 400px;
 }
 
@@ -430,4 +459,72 @@ height: 400px;
 
 #img-clear-channel{
     transform: translate(-50% , -50%) scale(1);
+}
+
+.container-text-brands{
+    width: 85%;
+    margin: 50px auto;
+}
+
+.img-brand-text{
+    filter: brightness(0);
+    height: 35px;
+    width: 150px;
+    padding-right: 35px;
+    margin-bottom: 40px;
+}
+
+.container-text-brands h4{
+    margin-bottom: 40px;
+}
+
+/* footer-teams */
+
+.footer-teams{
+    height: 300px;
+    background-color: #b4d0e7;
+    margin-bottom: 150px;
+}
+
+.content-footer{
+    padding-top: 130px;
+}   
+.content-footer h2{
+    font-size: 36px;
+    color: #61082b;
+}   
+
+.content-footer a{
+    font-weight: bold;
+    line-height: 25px;
+    margin-bottom: 40px;
+    position: absolute;
+    right: 300px; 
+}
+
+.footer-teams .footer-title{
+    display: inline-block;
+}
+
+/* section faq */
+
+.faq{
+    margin-bottom: 150px;
+}
+.faq .container-slim{
+    position: relative;
+}
+
+.faq-questions h2{
+    margin-bottom: 40px;
+}
+.faq-questions h4{
+    margin: 20px 0;
+}
+.faq-questions h4::after{
+    content: '\2304';
+    font-size: 25px;
+    position: relative;
+    left: 350px;
+    bottom: 5px;
 }
