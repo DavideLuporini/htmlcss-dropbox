@@ -16,8 +16,9 @@ body{
     font-family: 'Open Sans', sans-serif; 
 }
 
-/* utilities */
+/**** utilities ****/
 
+/* containers */
 .container-large{
     max-width: 1200px;
     margin: 0 auto;
@@ -33,6 +34,7 @@ body{
     float: left;
 }
 
+/* buttons */
 .btn-small{
     padding: 5px 10px;
 }
@@ -40,15 +42,32 @@ body{
     padding: 10px 20px;
 }
 
+/* text align */
+
 .text-align-right{
     text-align: right;
 }
 .text-align-left{
     text-align: left;
 }
+
+.inline{
+    display: inline;
+}
 .inline-block{
     display: inline-block;
 }
+
+/* text decoration */
+
+.text-dec-none{
+    text-decoration: none;
+}
+.text-underline{
+    text-decoration: underline;
+}
+
+/* spacing */
 
 .margin-bottom-10px{
     margin-bottom: 10px;
@@ -126,12 +145,7 @@ body{
 
 
 
-.text-dec-none{
-    text-decoration: none;
-}
-.text-underline{
-    text-decoration: underline;
-}
+
 
 /* text colors */
 
@@ -181,6 +195,9 @@ img , .menu-links a{
 
 .btn-header{
     padding-right: 30px;
+}
+a.bgc-blue:hover{
+    filter: brightness(2);
 }
 
 .menu-links > ul li{
@@ -297,12 +314,11 @@ img , .menu-links a{
     margin-bottom: 20px;
 }
 .card-description-container{
-    width: 75%;
+    width: 80%;
     margin: 25px auto;    
 }
 .cards-description > ul li,.cards-highlights > ul li{
     display: block;
-    margin-bottom: 5px;
 }
 
 .cards-description > ul h3{
@@ -315,9 +331,89 @@ img , .menu-links a{
     margin-bottom: 20px;
 }
 
+li.margin-bottom-10px{
+    margin-bottom: 10px;
+}
+/* ICONS */
+ul.check li::before{
+    content: '\f00c';
+    color: #0966ff;
+    margin-right: 5px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+
+}
+.check h4{
+    display: inline;
+}
+ul .folder::before{
+    content: '\f07b';
+    margin-right: 5px;
+    display: inline;
+    font-family: 'Font Awesome 5 Free';
+
+}
+ul .user::before , div .user:before{
+    content: '\f007';
+    margin-right: 5px;
+    display: inline;
+    font-family: 'Font Awesome 5 Free';
+
+}
+div .building::before{
+    content: '\f1ad';
+    margin-right: 5px;
+    display: inline;
+    font-family: 'Font Awesome 5 Free';
+
+}
+ul .add-user::before{
+    content: '\f234';
+    margin-right: 5px;
+    display: inline;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+
+}
+ul .pen::before{
+    content: '\f303';
+    margin-right: 5px;
+    display: inline;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+ul .smile::before{
+    content: '\f118';
+    margin-right: 5px;
+    display: inline;
+    font-family: 'Font Awesome 5 Free';
+}
+ul.check li::before{
+    content: '\f00c';
+    color: #0966ff;
+    margin-right: 5px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.check h4{
+    display: inline;
+}
+
+
+ul.check li{
+    padding-left: 1.2em;
+    text-indent: -1.2em;    
+}
+ul.cards-description li{
+    padding-left: 1.2em;
+    text-indent: -1.2em;    
+}
+
+
 .half-hr{
     text-align: left;
-    width: 60px;
+    width: 15%;
     color: black;
     margin-bottom: 30px;
 }
@@ -478,6 +574,9 @@ height: 400px;
     margin-bottom: 40px;
 }
 
+div.outline:hover{
+border: 10px currentColor solid;
+}
 /* footer-teams */
 
 .footer-teams{
@@ -541,13 +640,35 @@ height: 400px;
     list-style: none;
     width: calc(100% / 5 - 6px);
     display: inline-block;
+    margin-bottom: 100px;
+    vertical-align: top;
 }
 
 .page-footer ul li{
     color: white;
     line-height: 25px;
     font-size: 12px;
+
 }
 .page-footer ul h2{
     margin-bottom: 20px;
 }
+
+/* languages footer */
+
+.lang-menu-foot::before{
+    content:'\f57e';
+    font-family: 'Font Awesome 5 Free';
+    color: grey;
+    font-weight: 900;
+
+}
+.lang-menu-foot::after{
+    content:'\25B2';
+    color: grey;
+    font-size: 8px;
+    vertical-align: middle;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
