@@ -575,8 +575,10 @@ height: 400px;
 }
 
 div.outline:hover{
-border: 10px currentColor solid;
+    box-shadow: inset 0px 0px 0px 10px rgba(255, 255, 255, 0.25)   
 }
+
+
 /* footer-teams */
 
 .footer-teams{
