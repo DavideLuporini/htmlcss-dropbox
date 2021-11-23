@@ -199,6 +199,10 @@ img , .menu-links a{
 a.bgc-blue:hover{
     filter: brightness(2);
 }
+a.bgc-white:hover{
+    filter: brightness(0.8);
+    border: 2px solid black;
+}
 
 .menu-links > ul li{
     display: inline-block;
@@ -673,5 +677,6 @@ div.outline:hover{
     vertical-align: middle;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
+    margin-left: 2px;
 }
 
